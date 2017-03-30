@@ -1,0 +1,199 @@
+#fullpage{
+    width: 100%;
+    height:auto;
+}
+/*导航*/
+.header{
+    width: 100%;
+    height: 50px;
+    background: #444;
+    position: fixed;
+    z-index: 5;
+}
+nav{
+    width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav ul li{
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 50px;
+}
+nav ul li a{
+    color: #bbb;
+}
+.section{
+    width: 100%;
+    background: #041527;
+}
+/*banner*/
+.banner{
+    height: 745px;
+    overflow: hidden;
+    position: relative;
+}
+.banner .ban{
+    width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    top: 0;
+}
+.move{
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    top: 130px;
+}
+.con{
+    position: relative;
+}
+.con img{
+    position:relative;
+    display: block;
+    margin: 0 auto;
+}
+.con .hd1{
+    right: 100px;
+}
+.con .hd2{
+    left: 100px;
+}
+.slideInLeft{
+    animation-name: slideInLeft;
+}
+.slideInRight{
+    animation-name: slideInRight;
+}
+.con img .hd3{
+    top: 20px;
+}
+.circle{
+    position: absolute;
+    right: 64px;
+    top: 0;
+    text-align: center;
+    width: 214px;
+    height: 214px;
+}
+/*选择*/
+.choose{
+    width: 100%;
+    background: #041527;
+    padding-bottom: 80px;
+    position: relative;
+}
+.ufo{
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.ufo2{
+    position: absolute;
+    left: 50px;
+    bottom: 200px;
+}
+.box{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.boxName{
+    display: inline-block;
+    background: url(../img/hd_bg.png) no-repeat left bottom;
+    padding-bottom: 38px;
+    animation-name: fadeInDown;
+    margin-bottom: 20px;
+}
+.boxName h2{
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+    display: inline-block;
+    padding: 0 100px;
+    border-bottom: 3px solid #fff;
+}
+.boxLeft{
+    width: 600px;
+    height: auto;
+}
+.boxLeft ul{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+.boxLeft ul li{
+    width: 280px;
+    height: 133px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.boxLeft ul li:nth-child(2),.boxLeft ul li:nth-child(4){
+    margin-right: 0;
+}
+.boxLeft ul li:nth-child(3),.boxLeft ul li:nth-child(4){
+    margin-bottom: 0;
+}
+.boxLeft ul li h3{
+    font-size: 26px;
+    padding: 5px 0;
+}
+.b1{
+    color: #0DA9EE;
+}
+.b2{
+    color: #F6C705;
+}
+.b3{
+    color: #DE571C;
+}
+.b4{
+    color: #0DEE99;
+}
+.boxLeft ul li p{
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+}
+.box-b{
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    margin-top: 10px;
+}
+/*估值*/
+.box1Name{
+    background: url(../img/hd_bg2.png) no-repeat left bottom;
+}
+.mainTable{
+    padding: 40px 30px;
+    background: #FFF45C;
+    overflow: hidden;
+}
+#main{
+    margin-left: 30px;
+}
+/*优势*/
+.bg1{
+    background: url(../img/hd_bg1.png) no-repeat left bottom;
+}
+/*常见问题*/
+.bg3{
+    background: url(../img/hd_bg3.jpg) no-repeat left bottom;
+}
+.bgG{
+    background: #81C439;
+}
