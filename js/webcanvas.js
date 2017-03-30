@@ -1,80 +1,12 @@
-$(document).ready(function() {
-    $('#fullpage').fullpage({
-        'verticalCentered': false,
-        'css3': true,
-        anchors: ['page1', 'page2', 'page3', 'page4','page5','page6','page7','page8'],
-        'navigation': false,
-        'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
-        'loopTop': false,
-        'loopBottom': true,
-        'fitToSection': true,
-        paddingTop: '50px',
-        'animateAnchor': true,
-        'slidesNavPosition': top
-    });
-});
-var myChart = echarts.init(document.getElementById('main'));
-
-var itemStyle = {
-    normal: {
-        opacity: 0.7,
-        color:'#007FFF',
-        borderWidth: 2,
-        borderColor: '#235894'
-    }
-};
-option = {
-    backgroundColor:'#FFF45C',
-    title: {
-        textStyle: {
-            color: '#235894'
-        }
-    },
-    tooltip: {},
-    series: [{
-        name: 'pie',
-        type: 'pie',
-        selectedMode: 'single',
-        selectedOffset: 30,
-        clockwise: true,
-        label: {
-            normal: {
-                textStyle: {
-                    fontSize: 18,
-                    color: '#235894'
-                }
-            }
-        },
-        labelLine: {
-            normal: {
-                lineStyle: {
-                    color: '#235894'
-                }
-            }
-        },
-        data:[
-            {value:2, name:'4.5k-6k'},
-            {value:7.7, name:'6k-8k'},
-            {value:12.2, name:'8k-10k'},
-            {value:35.7, name:'10k-15k'},
-            {value:25.1, name:'15k-20k'},
-            {value:15.3 ,name:'20k-30k'},
-            {value:2 ,name:'30k-50k'}
-        ],
-        itemStyle: itemStyle
-    }]
-};
-myChart.setOption(option);
-
 (function(){
-    //åˆ›å»ºèˆå°
+    //´´½¨ÎèÌ¨
     var stage = new Konva.Stage({
         container: 'container',
         width: window.innerWidth,
         height: window.innerHeight
     });
 
-    //èˆå°ä¸­å¿ƒï¼Œä¹Ÿæ˜¯æ—‹è½¬çš„ä¸­å¿ƒ
+    //ÎèÌ¨ÖĞĞÄ£¬Ò²ÊÇĞı×ªµÄÖĞĞÄ
     var groupX = stage.width() / 2,
         groupY = stage.height() / 2,
         L3_Radius = 217,
@@ -83,11 +15,11 @@ myChart.setOption(option);
         L0_Radius = 66;
 
 
-    //èƒŒæ™¯å±‚
+    //±³¾°²ã
     var bgLayer = new Konva.Layer({
-        hitGraphEnabled : false//donâ€™t need event on layer set
+        hitGraphEnabled : false//don¡¯t need event on layer set
     });
-    //ç»˜åˆ¶èƒŒæ™¯åœ†å½¢ 3ç¯
+    //»æÖÆ±³¾°Ô²ĞÎ 3»·
     var circle_L3 = new Konva.Circle({
         x: groupX,
         y: groupY,
@@ -99,7 +31,7 @@ myChart.setOption(option);
     });
     bgLayer.add(circle_L3);
 
-    //ç»˜åˆ¶èƒŒæ™¯åœ†å½¢ 2ç¯
+    //»æÖÆ±³¾°Ô²ĞÎ 2»·
     var circle_L2 = new Konva.Circle({
         x: groupX,
         y: groupY,
@@ -111,13 +43,13 @@ myChart.setOption(option);
     });
     bgLayer.add(circle_L2);
 
-    //ç»˜åˆ¶èƒŒæ™¯ä¸­å¿ƒåŒºåŸŸ
+    //»æÖÆ±³¾°ÖĞĞÄÇøÓò
     var cneterCircleText = new CircleText({
-        text: "WEBå…¨æ ˆ",
+        text: "WEBÈ«Õ»",
         innerRadius: L0_Radius,
         outerRadius: L1_Radius,
         fontSize: 17,
-        fontFamily: 'å¾®è½¯é›…é»‘',
+        fontFamily: 'Î¢ÈíÑÅºÚ',
         fontFill: "#fff",
         fontX: -41,
         fontY: -8,
@@ -134,27 +66,27 @@ myChart.setOption(option);
 
 
 
-    //åŠ¨ç”»å±‚
+    //¶¯»­²ã
     var layer = new Konva.Layer({
         // hitGraphEnabled : false
     });
     stage.add(layer);
 
 
-    //åˆ›å»ºæ•´ä½“çš„åŠ¨ç”»ç»„
+    //´´½¨ÕûÌåµÄ¶¯»­×é
     var group = new Konva.Group({
         x: groupX,
         y: groupY,
         rotation: 0
     });
 
-    //è¦åˆ›å»ºçš„5ä¸ª3ç¯çš„å¯¹è±¡æ•°æ®è®¾ç½®
+    //Òª´´½¨µÄ5¸ö3»·µÄ¶ÔÏóÊı¾İÉèÖÃ
     var L3CircleData = [{
-        text: "WebApp",//åˆ›å»ºwebappçš„åœ†å¿ƒç»„åˆ 1
+        text: "WebApp",//´´½¨webappµÄÔ²ĞÄ×éºÏ 1
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 14,
-        fontFamily: 'å¾®è½¯é›…é»‘',
+        fontFamily: 'Î¢ÈíÑÅºÚ',
         fontFill: "#fff",
         fontX: -30,
         fontY: -7,
@@ -166,11 +98,11 @@ myChart.setOption(option);
         outerFill: "#ddd",
         opacity: .7
     },{
-        text: "canvas",//åŠ¨æ€åˆ›å»ºç¬¬2ä¸ªgroup
+        text: "canvas",//¶¯Ì¬´´½¨µÚ2¸ögroup
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 16	,
-        fontFamily: 'å¾®è½¯é›…é»‘',
+        fontFamily: 'Î¢ÈíÑÅºÚ',
         fontFill: "purple",
         fontX: -28,
         fontY: -7,
@@ -184,7 +116,7 @@ myChart.setOption(option);
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 16	,
-        fontFamily: 'å¾®è½¯é›…é»‘',
+        fontFamily: 'Î¢ÈíÑÅºÚ',
         fontFill: "purple",
         fontX: -30	,
         fontY: -7,
@@ -198,7 +130,7 @@ myChart.setOption(option);
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 16	,
-        fontFamily: 'å¾®è½¯é›…é»‘',
+        fontFamily: 'Î¢ÈíÑÅºÚ',
         fontFill: "purple",
         fontX: -30	,
         fontY: -7,
@@ -212,7 +144,7 @@ myChart.setOption(option);
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 16	,
-        fontFamily: 'å¾®è½¯é›…é»‘',
+        fontFamily: 'Î¢ÈíÑÅºÚ',
         fontFill: "purple",
         fontX: -30	,
         fontY: -7,
@@ -232,20 +164,20 @@ myChart.setOption(option);
     layer.add(group);
 
 
-    //ç»˜åˆ¶ç¬¬äºŒå±‚åŠ¨ç”»å±‚
+    //»æÖÆµÚ¶ş²ã¶¯»­²ã
     var groupL2 = new Konva.Group({
         x: groupX,
         y: groupY,
         rotation: 0
     });
 
-    // ç»˜åˆ¶ç¬¬äºŒå±‚çš„ä¸€ä¸ªåœ†å½¢
+    // »æÖÆµÚ¶ş²ãµÄÒ»¸öÔ²ĞÎ
     var zeptoJSCircleText = new CircleText({
         text: "zeptoJS",
         innerRadius: 30,
         outerRadius: 40,
         fontSize: 14	,
-        fontFamily: 'å¾®è½¯é›…é»‘',
+        fontFamily: 'Î¢ÈíÑÅºÚ',
         fontFill: "blue",
         fontX: -26	,
         fontY: -7,
@@ -264,7 +196,7 @@ myChart.setOption(option);
         innerRadius: 30,
         outerRadius: 40,
         fontSize: 14	,
-        fontFamily: 'å¾®è½¯é›…é»‘',
+        fontFamily: 'Î¢ÈíÑÅºÚ',
         fontFill: "blue",
         fontX: -20	,
         fontY: -7,
@@ -281,21 +213,21 @@ myChart.setOption(option);
 
     layer.batchDraw();
 
-    //åŠ¨ç”»å¤„ç†å±‚
-    var angularSpeed = 60;//æ¯ç§’æ—‹è½¬çš„è§’åº¦
+    //¶¯»­´¦Àí²ã
+    var angularSpeed = 60;//Ã¿ÃëĞı×ªµÄ½Ç¶È
     var anim = new Konva.Animation(function(frame) {
-        //è®¡ç®—æ¯ä¸€å¸§æ—‹è½¬çš„è§’åº¦
+        //¼ÆËãÃ¿Ò»Ö¡Ğı×ªµÄ½Ç¶È
         var angleDiff = frame.timeDiff * angularSpeed / 1000;
-        //ä¸‰ç¯è¿›è¡Œæ—‹è½¬
+        //Èı»·½øĞĞĞı×ª
         group.rotate(angleDiff);
         //
         group.getChildren().each(function(value, index){
             value.rotate(-angleDiff)
         });
 
-        //2ç¯ æ—‹è½¬
+        //2»· Ğı×ª
         groupL2.rotate(-angleDiff);
-        //2ç¯å†…çš„ ç»„åˆè¿›è¡Œåå‘æ—‹è½¬
+        //2»·ÄÚµÄ ×éºÏ½øĞĞ·´ÏòĞı×ª
         groupL2.getChildren().each(function(value, index){
             value.rotate(angleDiff)
         });
@@ -304,7 +236,7 @@ myChart.setOption(option);
     anim.start();
 
 
-    // åŠ¨ç”»äº‹ä»¶å¤„ç†
+    // ¶¯»­ÊÂ¼ş´¦Àí
     group.on('mouseover touchstart',function(e){
         angularSpeed = 10;
     });
@@ -314,21 +246,21 @@ myChart.setOption(option);
     });
 })();
 
-//æ—‹è½¬å›¾åƒçš„ç»„åˆå¯¹è±¡
+//Ğı×ªÍ¼ÏñµÄ×éºÏ¶ÔÏó
 function CircleText(option) {
-    // æ–‡å­—å†…å®¹
-    // åœ†çš„åŠå¾„
-    // é»˜è®¤åæ ‡ä½ç½®
-    // é¢œè‰²åœ†
-    // é¢œè‰²å…‰ç¯
-    // é€æ˜åº¦
+    // ÎÄ×ÖÄÚÈİ
+    // Ô²µÄ°ë¾¶
+    // Ä¬ÈÏ×ø±êÎ»ÖÃ
+    // ÑÕÉ«Ô²
+    // ÑÕÉ«¹â»·
+    // Í¸Ã÷¶È
     option = option || {};
     option.text = option.text || "canvas";
     option.innerRadius = option.innerRadius || 40;
     option.outerRadius = option.outerRadius || 60;
     option.fontSize =  option.fontSize || 14;
     option.fontWeight = option.fontWeight || "bold";
-    option.fontFamily = option.fontFamily || 'å¾®è½¯é›…é»‘';
+    option.fontFamily = option.fontFamily || 'Î¢ÈíÑÅºÚ';
     option.fontFill = option.fontFill || "#FFF";
     option.fontX = option.fontX ||-20;
     option.fontY = option.fontY ||-7;
@@ -338,7 +270,7 @@ function CircleText(option) {
     option.outerFill = option.outerFill || "#ddd";
     option.opacity = option.opacity || .5;
 
-    //åˆ›å»ºæ—‹è½¬ç»„åˆå¯¹è±¡çš„ ç»„
+    //´´½¨Ğı×ª×éºÏ¶ÔÏóµÄ ×é
     this.createCircleText = function() {
         var group = new Konva.Group({
             x: option.x,
@@ -346,7 +278,7 @@ function CircleText(option) {
             rotation: 0
         });
 
-        //å†…åœ†
+        //ÄÚÔ²
         var innerCircle = new Konva.Circle({
             x: 0,
             y: 0,
@@ -357,7 +289,7 @@ function CircleText(option) {
         });
         group.add(innerCircle);
 
-        //ç¯å½¢
+        //»·ĞÎ
         var outerRing = new Konva.Ring({
             x: 0,
             y: 0,
@@ -371,7 +303,7 @@ function CircleText(option) {
 
         group.add(outerRing);
 
-        //æ–‡å­—
+        //ÎÄ×Ö
         var text = new Konva.Text({
             text: option.text,
             fontSize: option.fontSize,

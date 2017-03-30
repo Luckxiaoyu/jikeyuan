@@ -197,3 +197,55 @@ nav ul li a{
 .bgG{
     background: #81C439;
 }
+.accordion{
+    width: 1150px;
+    height: 400px;
+    margin:50px auto;
+    border:1px solid red;
+    overflow: hidden;
+}
+.accordionList{
+    width: 1300px;
+}
+.accordionList li{
+    width: 240px;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+.accordionList li:nth-child(1){
+    background-color: #750E0D;
+}
+.accordionList li:nth-child(2){
+    background-color: #FE552C;
+}
+.accordionList li:nth-child(3){
+    background-color: #B6BEC1;
+}
+.accordionList li:nth-child(4){
+    background-color: #FAE17B;
+}
+.accordionList li:nth-child(5){
+    background-color: #FB848A;
+}
+.accordionList li img{
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin-left: 100px;
+}
+.worksDesc{
+    float: left;
+    color:#fff;
+    margin-left: 40px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.worksDesc h3{
+    font-size: 18px;
+    font-weight: 700;
+}
