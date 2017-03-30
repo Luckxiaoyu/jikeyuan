@@ -25,7 +25,6 @@ $(".accordionList li").mouseover(function(){
         'width':800
     });
 });
-
 $(".accordionList li").mouseout(function(){
     $(".accordionList li").each(function(){
         $(this).stop().animate({

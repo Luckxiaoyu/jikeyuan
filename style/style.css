@@ -176,7 +176,7 @@ nav ul li a{
 }
 /*估值*/
 .box1Name{
-    background: url(../img/hd_bg2.png) no-repeat left bottom;
+    background: url(../images/hd_bg2.png) no-repeat left bottom;
 }
 .mainTable{
     padding: 40px 30px;
@@ -188,11 +188,11 @@ nav ul li a{
 }
 /*优势*/
 .bg1{
-    background: url(../img/hd_bg1.png) no-repeat left bottom;
+    background: url(../images/hd_bg1.png) no-repeat left bottom;
 }
 /*常见问题*/
 .bg3{
-    background: url(../img/hd_bg3.jpg) no-repeat left bottom;
+    background: url(../images/hd_bg3.jpg) no-repeat left bottom;
 }
 .bgG{
     background: #81C439;
