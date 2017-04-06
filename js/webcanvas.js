@@ -1,12 +1,12 @@
 (function(){
-    //´´½¨ÎèÌ¨
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨
     var stage = new Konva.Stage({
         container: 'container',
         width: window.innerWidth,
         height: window.innerHeight
     });
 
-    //ÎèÌ¨ÖĞĞÄ£¬Ò²ÊÇĞı×ªµÄÖĞĞÄ
+    //ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½Ä£ï¿½Ò²ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     var groupX = stage.width() / 2,
         groupY = stage.height() / 2,
         L3_Radius = 217,
@@ -15,11 +15,11 @@
         L0_Radius = 66;
 
 
-    //±³¾°²ã
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     var bgLayer = new Konva.Layer({
-        hitGraphEnabled : false//don¡¯t need event on layer set
+        hitGraphEnabled : false//donï¿½ï¿½t need event on layer set
     });
-    //»æÖÆ±³¾°Ô²ĞÎ 3»·
+    //ï¿½ï¿½ï¿½Æ±ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ 3ï¿½ï¿½
     var circle_L3 = new Konva.Circle({
         x: groupX,
         y: groupY,
@@ -31,7 +31,7 @@
     });
     bgLayer.add(circle_L3);
 
-    //»æÖÆ±³¾°Ô²ĞÎ 2»·
+    //ï¿½ï¿½ï¿½Æ±ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ 2ï¿½ï¿½
     var circle_L2 = new Konva.Circle({
         x: groupX,
         y: groupY,
@@ -43,13 +43,13 @@
     });
     bgLayer.add(circle_L2);
 
-    //»æÖÆ±³¾°ÖĞĞÄÇøÓò
+    //ï¿½ï¿½ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     var cneterCircleText = new CircleText({
-        text: "WEBÈ«Õ»",
+        text: "WEBå‰ç«¯",
         innerRadius: L0_Radius,
         outerRadius: L1_Radius,
         fontSize: 17,
-        fontFamily: 'Î¢ÈíÑÅºÚ',
+        fontFamily: 'å¾®è½¯é›…é»‘',
         fontFill: "#fff",
         fontX: -41,
         fontY: -8,
@@ -66,27 +66,27 @@
 
 
 
-    //¶¯»­²ã
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     var layer = new Konva.Layer({
         // hitGraphEnabled : false
     });
     stage.add(layer);
 
 
-    //´´½¨ÕûÌåµÄ¶¯»­×é
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½
     var group = new Konva.Group({
         x: groupX,
         y: groupY,
         rotation: 0
     });
 
-    //Òª´´½¨µÄ5¸ö3»·µÄ¶ÔÏóÊı¾İÉèÖÃ
+    //Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½5ï¿½ï¿½3ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     var L3CircleData = [{
-        text: "WebApp",//´´½¨webappµÄÔ²ĞÄ×éºÏ 1
+        text: "Webpack",//ï¿½ï¿½ï¿½ï¿½webappï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½ 1
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 14,
-        fontFamily: 'Î¢ÈíÑÅºÚ',
+        fontFamily: 'å¾®è½¯é›…é»‘',
         fontFill: "#fff",
         fontX: -30,
         fontY: -7,
@@ -98,11 +98,11 @@
         outerFill: "#ddd",
         opacity: .7
     },{
-        text: "canvas",//¶¯Ì¬´´½¨µÚ2¸ögroup
+        text: "ReactNative",//ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½group
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 16	,
-        fontFamily: 'Î¢ÈíÑÅºÚ',
+        fontFamily: 'å¾®è½¯é›…é»‘',
         fontFill: "purple",
         fontX: -28,
         fontY: -7,
@@ -116,7 +116,7 @@
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 16	,
-        fontFamily: 'Î¢ÈíÑÅºÚ',
+        fontFamily: 'å¾®è½¯é›…é»‘',
         fontFill: "purple",
         fontX: -30	,
         fontY: -7,
@@ -130,7 +130,7 @@
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 16	,
-        fontFamily: 'Î¢ÈíÑÅºÚ',
+        fontFamily: 'å¾®è½¯é›…é»‘',
         fontFill: "purple",
         fontX: -30	,
         fontY: -7,
@@ -140,11 +140,11 @@
         outerFill: "#ddd",
         opacity: .7
     },{
-        text: "HTML5",
+        text: "JQuery",
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 16	,
-        fontFamily: 'Î¢ÈíÑÅºÚ',
+        fontFamily: 'å¾®è½¯é›…é»‘',
         fontFill: "purple",
         fontX: -30	,
         fontY: -7,
@@ -164,20 +164,20 @@
     layer.add(group);
 
 
-    //»æÖÆµÚ¶ş²ã¶¯»­²ã
+    //ï¿½ï¿½ï¿½ÆµÚ¶ï¿½ï¿½ã¶¯ï¿½ï¿½ï¿½ï¿½
     var groupL2 = new Konva.Group({
         x: groupX,
         y: groupY,
         rotation: 0
     });
 
-    // »æÖÆµÚ¶ş²ãµÄÒ»¸öÔ²ĞÎ
+    // ï¿½ï¿½ï¿½ÆµÚ¶ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ô²ï¿½ï¿½
     var zeptoJSCircleText = new CircleText({
-        text: "zeptoJS",
+        text: "Bootstrap",
         innerRadius: 30,
         outerRadius: 40,
         fontSize: 14	,
-        fontFamily: 'Î¢ÈíÑÅºÚ',
+        fontFamily: 'å¾®è½¯é›…é»‘',
         fontFill: "blue",
         fontX: -26	,
         fontY: -7,
@@ -196,7 +196,7 @@
         innerRadius: 30,
         outerRadius: 40,
         fontSize: 14	,
-        fontFamily: 'Î¢ÈíÑÅºÚ',
+        fontFamily: 'å¾®è½¯é›…é»‘',
         fontFill: "blue",
         fontX: -20	,
         fontY: -7,
@@ -209,25 +209,62 @@
     var groupC3 = CSS3CircleText.createCircleText();
     groupL2.add(groupC3);
 
+    //ng
+    var ngCircleText = new CircleText({
+        text: "JavaScript",
+        innerRadius: 30,
+        outerRadius: 40,
+        fontSize: 14,
+        fontFamily: 'å¾®è½¯é›…é»‘',
+        fontFill: "blue",
+        fontX: -20,
+        fontY: -7,
+        x: (Math.cos(15 * Math.PI / 180) * L2_Radius),
+        y: (Math.sin(15 * Math.PI / 180) * L2_Radius),
+        innerFill: "pink",
+        outerFill: "#ddd",
+        opacity: .7
+    });
+    var groupNg = ngCircleText.createCircleText();
+    groupL2.add(groupNg);
+    //jquery
+    var jqCircleText = new CircleText({
+        text: "HTML5",
+        innerRadius: 30,
+        outerRadius: 40,
+        fontSize: 14	,
+        fontFamily: 'å¾®è½¯é›…é»‘',
+        fontFill: "blue",
+        fontX: -20,
+        fontY: -7,
+        x: (Math.cos(-175 * Math.PI / 180) * L2_Radius),
+        y: (Math.sin(-175 * Math.PI / 180) * L2_Radius),
+        innerFill: "pink",
+        outerFill: "#ddd",
+        opacity: .7
+    });
+    var groupJq = jqCircleText.createCircleText();
+    groupL2.add(groupJq);
+
     layer.add(groupL2);
 
     layer.batchDraw();
 
-    //¶¯»­´¦Àí²ã
-    var angularSpeed = 60;//Ã¿ÃëĞı×ªµÄ½Ç¶È
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    var angularSpeed = 60;//Ã¿ï¿½ï¿½ï¿½ï¿½×ªï¿½Ä½Ç¶ï¿½
     var anim = new Konva.Animation(function(frame) {
-        //¼ÆËãÃ¿Ò»Ö¡Ğı×ªµÄ½Ç¶È
+        //ï¿½ï¿½ï¿½ï¿½Ã¿Ò»Ö¡ï¿½ï¿½×ªï¿½Ä½Ç¶ï¿½
         var angleDiff = frame.timeDiff * angularSpeed / 1000;
-        //Èı»·½øĞĞĞı×ª
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ª
         group.rotate(angleDiff);
         //
         group.getChildren().each(function(value, index){
             value.rotate(-angleDiff)
         });
 
-        //2»· Ğı×ª
+        //2ï¿½ï¿½ ï¿½ï¿½×ª
         groupL2.rotate(-angleDiff);
-        //2»·ÄÚµÄ ×éºÏ½øĞĞ·´ÏòĞı×ª
+        //2ï¿½ï¿½ï¿½Úµï¿½ ï¿½ï¿½Ï½ï¿½ï¿½Ğ·ï¿½ï¿½ï¿½ï¿½ï¿½×ª
         groupL2.getChildren().each(function(value, index){
             value.rotate(angleDiff)
         });
@@ -236,7 +273,7 @@
     anim.start();
 
 
-    // ¶¯»­ÊÂ¼ş´¦Àí
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
     group.on('mouseover touchstart',function(e){
         angularSpeed = 10;
     });
@@ -246,21 +283,21 @@
     });
 })();
 
-//Ğı×ªÍ¼ÏñµÄ×éºÏ¶ÔÏó
+//ï¿½ï¿½×ªÍ¼ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
 function CircleText(option) {
-    // ÎÄ×ÖÄÚÈİ
-    // Ô²µÄ°ë¾¶
-    // Ä¬ÈÏ×ø±êÎ»ÖÃ
-    // ÑÕÉ«Ô²
-    // ÑÕÉ«¹â»·
-    // Í¸Ã÷¶È
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    // Ô²ï¿½Ä°ë¾¶
+    // Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+    // ï¿½ï¿½É«Ô²
+    // ï¿½ï¿½É«ï¿½â»·
+    // Í¸ï¿½ï¿½ï¿½ï¿½
     option = option || {};
     option.text = option.text || "canvas";
     option.innerRadius = option.innerRadius || 40;
     option.outerRadius = option.outerRadius || 60;
     option.fontSize =  option.fontSize || 14;
     option.fontWeight = option.fontWeight || "bold";
-    option.fontFamily = option.fontFamily || 'Î¢ÈíÑÅºÚ';
+    option.fontFamily = option.fontFamily || 'å¾®è½¯é›…é»‘';
     option.fontFill = option.fontFill || "#FFF";
     option.fontX = option.fontX ||-20;
     option.fontY = option.fontY ||-7;
@@ -270,7 +307,7 @@ function CircleText(option) {
     option.outerFill = option.outerFill || "#ddd";
     option.opacity = option.opacity || .5;
 
-    //´´½¨Ğı×ª×éºÏ¶ÔÏóµÄ ×é
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ï¶ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
     this.createCircleText = function() {
         var group = new Konva.Group({
             x: option.x,
@@ -278,7 +315,7 @@ function CircleText(option) {
             rotation: 0
         });
 
-        //ÄÚÔ²
+        //ï¿½ï¿½Ô²
         var innerCircle = new Konva.Circle({
             x: 0,
             y: 0,
@@ -289,7 +326,7 @@ function CircleText(option) {
         });
         group.add(innerCircle);
 
-        //»·ĞÎ
+        //ï¿½ï¿½ï¿½ï¿½
         var outerRing = new Konva.Ring({
             x: 0,
             y: 0,
@@ -303,7 +340,7 @@ function CircleText(option) {
 
         group.add(outerRing);
 
-        //ÎÄ×Ö
+        //ï¿½ï¿½ï¿½ï¿½
         var text = new Konva.Text({
             text: option.text,
             fontSize: option.fontSize,

@@ -6,12 +6,18 @@ $(document).ready(function() {
         'navigation': false,
         'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
         'loopTop': false,
-        'loopBottom': true,
+        'loopBottom': false,
         'fitToSection': true,
         paddingTop: '50px',
         'animateAnchor': true,
-        'slidesNavPosition': top
+        'slidesNavPosition': top,
+        menu: '#menu'
     });
+
+    setInterval(function(){
+        $.fn.fullpage.moveSlideRight();
+    }, 1500);
+
 });
 
 //手风琴
@@ -31,5 +37,6 @@ $(".accordionList li").mouseout(function(){
             'width':240
         });
     });
-
 });
+
+
