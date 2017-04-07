@@ -21,8 +21,11 @@
     color: #fff;
     float: left;
 }
-.logo h2{
+.logo h1{
     line-height: 50px;
+}
+.logo h1 a{
+    color:#fff;
 }
 nav{
     width: 1250px;
@@ -40,8 +43,9 @@ nav ul li{
     line-height: 50px;
 }
 nav ul li a{
-    color: #bbb;
+    color: #fff;
 }
+
 .section{
     width: 100%;
     background: #041527;
@@ -395,6 +399,62 @@ nav ul li a{
     font-size: 18px;
     font-weight: 700;
 }
+/*学员作品*/
+.automatic{
+    width:1200px;
+    margin:0 auto;
+    height: 500px;
+    overflow: hidden;
+    /*border: 1px solid red;*/
+}
+.xzmm_slide {
+    height:400px;
+    position: relative;
+}
+.xzmm_slide li{
+    position: absolute;
+    left:200px;
+    top:0;
+}
+.xzmm_slide li img{
+    width:100%;
+}
+.xzmm_arrow{
+    opacity: 0;
+    position: relative;
+    z-index:100;
+}
+.prev{
+    width:76px;
+    height:112px;
+    position: absolute;
+    top:50%;
+    /*margin-top:-56px;*/
+    left: 0;
+    background-image: url('../images/prev.png');
+    z-index: 99;
+}
+.next{
+    width:76px;
+    height:112px;
+    position: absolute;
+    top:50%;
+    right:0;
+    background-image: url('../images/next.png');
+}
+.xzmmMask{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    background-color: rgba(0, 0, 0,.6);
+    display:none;
+}
+.xzmmMask img{
+    margin: 55px auto;
+}
 /*咨询*/
 .zx{
     width: 60px;
@@ -490,6 +550,7 @@ nav ul li a{
     width: 220px;
     height: 220px;
 }
+
 /*侧栏浮层*/
 .popover{
     position: absolute;
@@ -585,7 +646,7 @@ nav ul li a{
 /*联系我们 页脚*/
 .foots{
     padding: 25px 0;
-    margin-top: -15px;
+    /*margin-top: -15px;*/
     overflow: hidden;
     /*border: 1px solid red;*/
     /*border-top: 1px solid #E0E0E0;*/

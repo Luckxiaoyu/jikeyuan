@@ -1,5 +1,5 @@
 /**
- * Created by andy on 2015/11/22.
+ * Created by andy on 2015/11/23.
  */
 // 多个属性运动框架  添加回调函数
 function animate(obj,json,fn) {  // 给谁    json
@@ -13,7 +13,8 @@ function animate(obj,json,fn) {  // 给谁    json
             var current = 0;
             if(attr == "opacity")
             {
-                current = parseInt(getStyle(obj,attr)*100);
+                current = Math.round(parseInt(getStyle(obj,attr)*100)) || 0;
+                //console.log(current);
             }
             else
             {
@@ -33,8 +34,8 @@ function animate(obj,json,fn) {  // 给谁    json
                 }
                 else
                 {  // obj.style.filter = alpha(opacity = 30)
-                    obj.style.filter = "alpha(opacity = "+(current + step)+")";
-                    console.log(current);
+                    obj.style.filter = "alpha(opacity = "+(current + step)* 10+")";
+
                 }
             }
             else if(attr == "zIndex")
@@ -60,7 +61,7 @@ function animate(obj,json,fn) {  // 给谁    json
                 fn(); // 函数名 +  （）  调用函数  执行函数
             }
         }
-    },5)
+    },10)
 }
 function getStyle(obj,attr) {  //  谁的      那个属性
     if(obj.currentStyle)  // ie 等
