@@ -11,29 +11,31 @@
 </head>
 <body>
 <div class="header">
-    <div class="logo">
-        <h1><a href="#page1">极客园IT学习中心</a></h1>
+    <div class="headerContent">
+        <div class="logo">
+            <h1><a href="#page1">极客园IT学习中心</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+                <li data-menuanchor="page2"><a href="#page2">简介</a></li>
+                <li data-menuanchor="page3"><a href="#page3">薪资</a></li>
+                <li data-menuanchor="page4"><a href="#page4">就业</a></li>
+                <li data-menuanchor="page5"><a href="#page5">课程</a></li>
+                <li data-menuanchor="page6"><a href="#page6">实战</a></li>
+                <li data-menuanchor="page7"><a href="#page7">学员作品</a></li>
+                <li data-menuanchor="page8"><a href="#page8">联系我们</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav>
-        <ul>
-            <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
-            <li data-menuanchor="page2"><a href="#page2">简介</a></li>
-            <li data-menuanchor="page3"><a href="#page3">薪资</a></li>
-            <li data-menuanchor="page4"><a href="#page4">就业</a></li>
-            <li data-menuanchor="page5"><a href="#page5">课程</a></li>
-            <li data-menuanchor="page6"><a href="#page6">实战</a></li>
-            <li data-menuanchor="page7"><a href="#page7">学员作品</a></li>
-            <li data-menuanchor="page8"><a href="#page8">联系我们</a></li>
-        </ul>
-    </nav>
 </div>
 <div id="fullpage">
-    <div class="section active">
+    <div class="section active homeBg">
         <!--<div class="slide"></div>-->
         <div class="slide active">
             <div class="banner">
                 <div class="ban">
-                    <img src="images/ban_bg.png" alt="">
+                    <!--<img src="images/ban_bg.png" alt="">-->
                     <div class="move">
                         <div class="con">
                             <img src="images/hd1.png" class="hd1 slideInLeft" alt="">
@@ -46,7 +48,7 @@
         </div>
         <!--<div class="slide"></div>-->
     </div>
-    <!--无处不在的前端-->
+    <!--简介-->
     <div class="section">
         <div class="box">
             <div class="boxName">
@@ -59,62 +61,109 @@
             </div>
         </div>
     </div>
-    <!--估值-->
-    <div class="section">
-        <div class="box box1">
-            <div class="boxName box1Name">
-                <h2>前端工程师市场估值有多高？</h2>
+    <!--适合-->
+    <div class="section suitBg">
+        <div class="box">
+            <div class="boxName">
+                <h2>前端开发谁更适合学习</h2>
             </div>
-            <div class="mainTable">
-                <div id="main" style="width: 400px;height:250px;"></div>
-                <div class="table">
-                    <ul>
-                        <li>
-                            <span>区间</span>
-                            <span><b></b></span>
-                            <span>占比</span>
-                        </li>
-                        <li>
-                            <span>4.5k-6k</span>
-                            <span><b></b></span>
-                            <span>2%</span>
-                        </li>
-                        <li>
-                            <span>6k-8k</span>
-                            <span><b></b></span>
-                            <span>7.7%</span>
-                        </li>
-                        <li>
-                            <span>8k-10k</span>
-                            <span><b></b></span>
-                            <span>12.2%</span>
-                        </li>
-                        <li>
-                            <span>10k-15k</span>
-                            <span><b></b></span>
-                            <span>35.7%</span>
-                        </li>
-                        <li>
-                            <span>15k-20k</span>
-                            <span><b></b></span>
-                            <span>25.1%</span>
-                        </li>
-                        <li>
-                            <span>20k-30k</span>
-                            <span><b></b></span>
-                            <span></span>
-                        </li>
-                        <li>
-                            <span>30k-50k</span>
-                            <span><b></b></span>
-                            <span></span>
-                        </li>
-                    </ul>
-                </div>
+            <!--适合人群-->
+            <div class="suitable">
+                <ul>
+                    <li>
+                        <div>
+                            <h3 style="margin-bottom:40px;">想拿高薪</h3>
+                            <p>如果你有一定的计算机基础，且高中以上学历，那学本课程拿高薪将会很轻松。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/suit1.jpg" class="suitPic" alt=""/>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3 style="margin-bottom:40px;">想做前端开发</h3>
+                            <p>前端正盛，如果你有兴趣，想从事前端工作，通过本次学习即可胜任，因为课程融合了目前前端开发最前沿的实战技能。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/suit3.jpg" class="suitPic"  alt=""/>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/suit2.jpg" class="suitPic" alt=""/>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3 style="margin-bottom:40px;">想拥有一技之长</h3>
+                            <p>对于厌倦了每天跑销售，靠业绩吃饭，或者在工厂上班，辛苦工资又低的同学来说，学习前端开发是一次改变未来的机会</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/suit4.jpg" class="suitPic" alt=""/>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3 style="margin-bottom:40px;">后端转型</h3>
+                            <p>如果你是已在职的后端开发工程师，想提升自己的前端开发能力，那本课程将帮你搞定前端，大幅提升职业竞争力。</p>
+                        </div>
+                    </li>
+                </ul>
+                <!--<div id="main" style="width: 400px;height:250px;"></div>-->
+                <!--<div class="table">-->
+                    <!--<ul>-->
+                        <!--<li>-->
+                            <!--<span>区间</span>-->
+                            <!--<span><b></b></span>-->
+                            <!--<span>占比</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<span>4.5k-6k</span>-->
+                            <!--<span><b></b></span>-->
+                            <!--<span>2%</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<span>6k-8k</span>-->
+                            <!--<span><b></b></span>-->
+                            <!--<span>7.7%</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<span>8k-10k</span>-->
+                            <!--<span><b></b></span>-->
+                            <!--<span>12.2%</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<span>10k-15k</span>-->
+                            <!--<span><b></b></span>-->
+                            <!--<span>35.7%</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<span>15k-20k</span>-->
+                            <!--<span><b></b></span>-->
+                            <!--<span>25.1%</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<span>20k-30k</span>-->
+                            <!--<span><b></b></span>-->
+                            <!--<span></span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<span>30k-50k</span>-->
+                            <!--<span><b></b></span>-->
+                            <!--<span></span>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
             </div>
         </div>
     </div>
-    <!--就业-->
+    <!--就业学员-->
     <div class="section">
         <div class="choose">
             <img src="images/ufo_big.jpg" class="ufo" alt="">
@@ -162,13 +211,13 @@
         </div>
     </div>
     <!--课程体系-->
-    <div class="section">
+    <div class="section courseBg">
         <div class="box">
             <div class="boxName">
                 <h2>课程体系</h2>
                 <!--<p class="course">专业、前沿、强大、实用</p>-->
             </div>
-            <!--<p class="course">专业、前沿、强大、实用</p>-->
+            <p class="course">专业、前沿、强大、实用</p>
             <ul class="coursePhase">
                 <li>
                     <div class="courseFront">
@@ -275,7 +324,7 @@
         </div>
     </div>
     <!--实战项目-->
-    <div class="section" style="background:url('./images/itembg.jpg');">
+    <div class="section itemsBg">
         <div class="box">
             <div class="boxName bg1">
                 <h2>实战项目接轨最热技术前沿</h2>
@@ -355,7 +404,7 @@
     <!--联系我们-->
     <div class="section bgG">
         <div class="box">
-            <div class="boxName bg3">
+            <div class="boxName bg1">
                 <h2>联系我们</h2>
             </div>
             <div class="contact">

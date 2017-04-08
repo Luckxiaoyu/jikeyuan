@@ -15,11 +15,19 @@
     position: fixed;
     z-index: 5;
 }
+.headerContent{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: red;*/
+    margin:  0 auto;
+    position: relative;
+}
 .logo{
     margin-left: 80px;
     font-size:28px;
     color: #fff;
-    float: left;
+    /*float: left;*/
 }
 .logo h1{
     line-height: 50px;
@@ -27,10 +35,19 @@
 .logo h1 a{
     color:#fff;
 }
+.homeBg{
+    background: url("../images/ban_bg.png") no-repeat center center !important;
+    /*background-position: ;*/
+    /*background-size: 100% 100%;*/
+}
 nav{
-    width: 1250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*width: 1250px;*/
     height: 100%;
     margin: 0 auto;
+    /*background-color: green;*/
 }
 nav ul{
     display: flex;
@@ -136,7 +153,7 @@ nav ul li a{
     line-height: 50px;
     font-weight: bold;
     font-size: 40px;
-    color: #fff;
+    color: #000;
     display: inline-block;
     padding: 0 100px;
     border-bottom: 3px solid #fff;
@@ -207,7 +224,47 @@ nav ul li a{
     color: #fff;
     margin-top: 10px;
 }
-/*估值*/
+/*适合人群*/
+.suitable{
+    width: 100%;
+    height: 620px;
+    /*background-color: green;*/
+    padding: 40px;
+    box-sizing: border-box;
+    /*background-color: red;*/
+}
+.suitable ul{
+    width:900px;
+    height: 538px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.suitable ul li{
+    box-sizing: border-box;
+    width: 223px;
+    height: 267px;
+    /*background-color: red;*/
+    border: 1px solid #000;
+    margin-left: -1px;
+    font-size: 12px;
+    border-bottom: 2px;
+    background-color: #253141;
+}
+.suitable ul li:nth-child(1),.suitable ul li:nth-child(3),.suitable ul li:nth-child(6),.suitable ul li:nth-child(8){
+    padding: 30px 25px 0;
+    color:#fff;
+    font-size: 14px;
+}
+.suitPic{
+    width: 223px;
+    height: 267px;
+}
+.suitBg{
+    background: url('../images/boxbg.gif') no-repeat center bottom;
+}
+
 .box1Name{
     background: url(../images/hd_bg2.png) no-repeat left bottom;
 }
@@ -228,18 +285,26 @@ nav ul li a{
     background: url(../images/hd_bg3.jpg) no-repeat left bottom;
 }
 .bgG{
-    background: #81C439;
+    /*background: #81C439;*/
+    background: url('../images/contact.jpg') no-repeat center bottom;
 }
 .bgWork{
-    background-color: #ff5500;
+    /*background-color: #ff5500;*/
+    background: url('../images/itemsBg.jpg') no-repeat center bottom;
 }
 /*课程体系*/
+.courseBg{
+    background: url('../images/courseBg.jpg') no-repeat center bottom;
+    background-size:100% 100%;
+}
 .course{
     font-size: 24px;
     font-weight:700;
-    color:#fff;
+    color: #999;
+
 }
 .coursePhase{
+    margin: 5% auto;
     width: 1150px;
     height: 380px;
     display: flex;
@@ -248,9 +313,12 @@ nav ul li a{
 .coursePhase>li {
     width: 210px;
     height: 380px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     border-radius: 6px;
     position: relative;
+}
+.coursePhase>li:hover{
+    background-color: transparent;
 }
 .courseFront,.courseBack{
     position: absolute;
@@ -317,6 +385,7 @@ nav ul li a{
     color: #364762;
     line-height: 2.5;
 }
+
 .courseAction{
     font-weight: 400;
     color: #979797;
@@ -346,8 +415,12 @@ nav ul li a{
 }
 
 /*实战项目*/
+.itemsBg{
+    background:url('../images/zuopinBg.png') no-repeat center bottom;
+}
 .accordion{
     width: 1150px;
+    /*width: 80%;*/
     height: 400px;
     margin:50px auto;
     overflow: hidden;
@@ -401,7 +474,8 @@ nav ul li a{
 }
 /*学员作品*/
 .automatic{
-    width:1200px;
+    /*width:1200px;*/
+    width: 90%;
     margin:0 auto;
     height: 500px;
     overflow: hidden;
@@ -453,7 +527,7 @@ nav ul li a{
     display:none;
 }
 .xzmmMask img{
-    margin: 55px auto;
+    margin: 10% auto;
 }
 /*咨询*/
 .zx{
@@ -606,10 +680,11 @@ nav ul li a{
 }
 /*联系我们 表单*/
 .contactForm{
-    width: 1150px;
+    /*width: 1150px;*/
+    width: 80%;
     height: 50px;
     /*border: 1px solid red;*/
-    margin-top: 15px;
+    margin: 15px auto 0;
 }
 .contactForm li{
     display: inline-block;
@@ -645,7 +720,11 @@ nav ul li a{
 
 /*联系我们 页脚*/
 .foots{
-    padding: 25px 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translate(-50%);
+    padding: 15px 0;
     /*margin-top: -15px;*/
     overflow: hidden;
     /*border: 1px solid red;*/
