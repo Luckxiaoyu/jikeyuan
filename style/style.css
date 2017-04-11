@@ -8,6 +8,9 @@
 /*#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}*/
 /*#menu .active a { color: #fff; background-color: #333;}*/
 /*导航*/
+body{
+    overflow: hidden;
+}
 .header{
     width: 100%;
     height: 50px;
@@ -35,19 +38,12 @@
 .logo h1 a{
     color:#fff;
 }
-.homeBg{
-    background: url("../images/ban_bg.png") no-repeat center center !important;
-    /*background-position: ;*/
-    /*background-size: 100% 100%;*/
-}
 nav{
     position: absolute;
     top: 0;
     right: 0;
-    /*width: 1250px;*/
     height: 100%;
     margin: 0 auto;
-    /*background-color: green;*/
 }
 nav ul{
     display: flex;
@@ -81,6 +77,11 @@ nav ul li a{
     margin-left: -600px;
     top: 0;
 }
+.banImg{
+    display: none;
+    position: absolute;
+    top:0;
+}
 .move{
     width: 1200px;
     position: absolute;
@@ -93,24 +94,24 @@ nav ul li a{
 }
 .con img{
     position:relative;
+    position: absolute;
     display: block;
     margin: 0 auto;
 }
 .con .hd1{
+    display: none;
     right: 100px;
 }
 .con .hd2{
-    left: 100px;
+    display: none;
+    top:200px;
 }
-.slideInLeft{
-    animation-name: slideInLeft;
+.con .hd3{
+    position: absolute;
+    left:240px;
+    top: 360px;
 }
-.slideInRight{
-    animation-name: slideInRight;
-}
-.con img .hd3{
-    top: 20px;
-}
+
 .circle{
     position: absolute;
     right: 64px;
@@ -119,10 +120,27 @@ nav ul li a{
     width: 214px;
     height: 214px;
 }
-/*选择*/
+/*简介*/
+.overviewBg{
+    background: url("../images/overview_bg.jpg") no-repeat center center;
+}
+.overviewContent{
+    width: 100%;
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mcan{
+    margin: 0 auto;
+}
+/*就业*/
+.careerBg{
+    background: url("../images/cr_bg.png") no-repeat center center;
+}
 .choose{
     width: 100%;
-    background: #041527;
+    /*background: #041527;*/
     padding-bottom: 80px;
     position: relative;
 }
@@ -143,19 +161,26 @@ nav ul li a{
 }
 .boxName{
     display: inline-block;
-    background: url(../images/hd_bg.png) no-repeat left bottom;
+    width: 100%;
+    /*background: url(../images/hd_bg.png) no-repeat center bottom;*/
     padding-bottom: 38px;
-    animation-name: fadeInDown;
     margin-bottom: 20px;
+    position: relative;
 }
 .boxName h2{
+    position: absolute;
+    top:-200px;
+    left:50%;
+    display: none;
+    transform: translate(-50%);
+    /*background: url(../images/hd_bg.png) no-repeat left 50px;*/
     text-align: center;
     line-height: 50px;
     font-weight: bold;
     font-size: 40px;
     color: #000;
-    display: inline-block;
-    padding: 0 100px;
+    /*display: inline-block;*/
+    /*padding: 0 100px;*/
     border-bottom: 3px solid #fff;
 }
 .chooseContent{
@@ -228,10 +253,13 @@ nav ul li a{
 .suitable{
     width: 100%;
     height: 620px;
-    /*background-color: green;*/
     padding: 40px;
+    margin-top: -50px;
     box-sizing: border-box;
-    /*background-color: red;*/
+}
+
+.suitableText{
+    cursor: default;
 }
 .suitable ul{
     width:900px;
@@ -239,18 +267,18 @@ nav ul li a{
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 3% auto 0;
 }
 .suitable ul li{
     box-sizing: border-box;
     width: 223px;
     height: 267px;
-    /*background-color: red;*/
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     margin-left: -1px;
     font-size: 12px;
     border-bottom: 2px;
     background-color: #253141;
+    overflow: hidden;
 }
 .suitable ul li:nth-child(1),.suitable ul li:nth-child(3),.suitable ul li:nth-child(6),.suitable ul li:nth-child(8){
     padding: 30px 25px 0;
@@ -260,6 +288,10 @@ nav ul li a{
 .suitPic{
     width: 223px;
     height: 267px;
+    transition: all 0.5s ease 0s;
+}
+.suitPic:hover{
+    transform: scale(1.1);
 }
 .suitBg{
     background: url('../images/boxbg.gif') no-repeat center bottom;
@@ -276,21 +308,12 @@ nav ul li a{
 #main{
     margin-left: 30px;
 }
-/*优势*/
-.bg1{
-    background: url(../images/hd_bg1.png) no-repeat left bottom;
-}
-/*常见问题*/
-.bg3{
-    background: url(../images/hd_bg3.jpg) no-repeat left bottom;
-}
+
 .bgG{
-    /*background: #81C439;*/
     background: url('../images/contact.jpg') no-repeat center bottom;
 }
 .bgWork{
-    /*background-color: #ff5500;*/
-    background: url('../images/itemsBg.jpg') no-repeat center bottom;
+    background: url('../images/zuopinBg.png') no-repeat center bottom;
 }
 /*课程体系*/
 .courseBg{
@@ -307,15 +330,36 @@ nav ul li a{
     margin: 5% auto;
     width: 1150px;
     height: 380px;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
 }
 .coursePhase>li {
+    position: relative;
     width: 210px;
     height: 380px;
-    /*background-color: #fff;*/
+    background-color: #fff;
     border-radius: 6px;
-    position: relative;
+    position: absolute;
+    display: none;
+}
+.coursePhase>li:nth-child(1){
+    top:-800px;
+    left: 0;
+}
+.coursePhase>li:nth-child(2){
+    left: 235px;
+    top:-800px;
+}
+.coursePhase>li:nth-child(3){
+    left: 470px;
+    top:-800px;
+}
+.coursePhase>li:nth-child(4){
+    left: 705px;
+    top:-800px;
+}
+.coursePhase>li:nth-child(5){
+    right: 0;
+    /*top:-800px;*/
 }
 .coursePhase>li:hover{
     background-color: transparent;
@@ -416,7 +460,7 @@ nav ul li a{
 
 /*实战项目*/
 .itemsBg{
-    background:url('../images/zuopinBg.png') no-repeat center bottom;
+    background:url('../images/itemsBg.jpg') no-repeat center bottom;
 }
 .accordion{
     width: 1150px;
@@ -474,12 +518,10 @@ nav ul li a{
 }
 /*学员作品*/
 .automatic{
-    /*width:1200px;*/
     width: 90%;
     margin:0 auto;
     height: 500px;
     overflow: hidden;
-    /*border: 1px solid red;*/
 }
 .xzmm_slide {
     height:400px;
@@ -503,7 +545,6 @@ nav ul li a{
     height:112px;
     position: absolute;
     top:50%;
-    /*margin-top:-56px;*/
     left: 0;
     background-image: url('../images/prev.png');
     z-index: 99;

@@ -17,63 +17,64 @@
         </div>
         <nav>
             <ul>
-                <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
-                <li data-menuanchor="page2"><a href="#page2">简介</a></li>
-                <li data-menuanchor="page3"><a href="#page3">薪资</a></li>
-                <li data-menuanchor="page4"><a href="#page4">就业</a></li>
-                <li data-menuanchor="page5"><a href="#page5">课程</a></li>
-                <li data-menuanchor="page6"><a href="#page6">实战</a></li>
-                <li data-menuanchor="page7"><a href="#page7">学员作品</a></li>
-                <li data-menuanchor="page8"><a href="#page8">联系我们</a></li>
+                <li data-menuanchor="home" class="active"><a href="#home">首页</a></li>
+                <li data-menuanchor="overview"><a href="#overview">简介</a></li>
+                <li data-menuanchor="suit"><a href="#suit">适合</a></li>
+                <li data-menuanchor="career"><a href="#career">就业</a></li>
+                <li data-menuanchor="course"><a href="#course">课程</a></li>
+                <li data-menuanchor="actual"><a href="#actual">实战</a></li>
+                <li data-menuanchor="works"><a href="#works">学员作品</a></li>
+                <li data-menuanchor="contact"><a href="#contact">联系我们</a></li>
             </ul>
         </nav>
     </div>
 </div>
 <div id="fullpage">
-    <div class="section active homeBg">
-        <!--<div class="slide"></div>-->
+    <div class="section active">
         <div class="slide active">
             <div class="banner">
                 <div class="ban">
-                    <!--<img src="images/ban_bg.png" alt="">-->
+                    <img src="images/ban_bg.png" class="banImg" alt="">
                     <div class="move">
                         <div class="con">
-                            <img src="images/hd1.png" class="hd1 slideInLeft" alt="">
-                            <img src="images/hd2.png" class="hd2 slideInRight" alt="">
+                            <img src="images/hd1.png" class="hd1" alt="">
+                            <img src="images/hd2.png" class="hd2" alt="">
                             <img src="images/hd_down.png" class="hd3" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--<div class="slide"></div>-->
     </div>
     <!--简介-->
-    <div class="section">
+    <div class="section overviewBg">
         <div class="box">
-            <div class="boxName">
+            <div class="boxName boxName2">
                 <h2>无处不在的前端开发</h2>
             </div>
-        </div>
-        <div id="container">
-            <div class="konvajs-content localCan" role="presentation"><canvas width="410" height="400" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 410px; height: 400px;"></canvas>
-                <canvas width="410" height="400" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 410px; height: 400px;"></canvas>
+            <div class="overviewContent">
+                <div id="container" class="mcan">
+                    <div class="konvajs-content localCan" role="presentation">
+                        <!--<canvas width="360" height="350" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 360px; height: 350px;"></canvas>-->
+                        <canvas width="360" height="350" style="padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 0px; left: 0px; width: 360px; height: 350px;"></canvas>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!--适合-->
     <div class="section suitBg">
         <div class="box">
-            <div class="boxName">
+            <div class="boxName boxName3">
                 <h2>前端开发谁更适合学习</h2>
             </div>
             <!--适合人群-->
             <div class="suitable">
                 <ul>
                     <li>
-                        <div>
+                        <div class="suitableText">
                             <h3 style="margin-bottom:40px;">想拿高薪</h3>
-                            <p>如果你有一定的计算机基础，且高中以上学历，那学本课程拿高薪将会很轻松。</p>
+                            <p>如果你有一定的计算机基础，且高中以上学历，那学本课程拿高薪将会很轻松。如果你是0基础，也完全没有问题，只要你想改变自己。</p>
                         </div>
                     </li>
                     <li>
@@ -82,7 +83,7 @@
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="suitableText">
                             <h3 style="margin-bottom:40px;">想做前端开发</h3>
                             <p>前端正盛，如果你有兴趣，想从事前端工作，通过本次学习即可胜任，因为课程融合了目前前端开发最前沿的实战技能。</p>
                         </div>
@@ -93,133 +94,53 @@
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="suitableText">
                             <img src="images/suit2.jpg" class="suitPic" alt=""/>
                         </div>
                     </li>
                     <li>
                         <div>
                             <h3 style="margin-bottom:40px;">想拥有一技之长</h3>
-                            <p>对于厌倦了每天跑销售，靠业绩吃饭，或者在工厂上班，辛苦工资又低的同学来说，学习前端开发是一次改变未来的机会</p>
+                            <p>对于厌倦了每天跑销售，靠业绩吃饭，或者在工厂上班，辛苦工资又低的同学来说，学习前端开发是一次改变未来的机会。</p>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="suitableText">
                             <img src="images/suit4.jpg" class="suitPic" alt=""/>
                         </div>
                     </li>
                     <li>
                         <div>
                             <h3 style="margin-bottom:40px;">后端转型</h3>
-                            <p>如果你是已在职的后端开发工程师，想提升自己的前端开发能力，那本课程将帮你搞定前端，大幅提升职业竞争力。</p>
+                            <p>如果你是已在职的后端开发工程师，想提升自己的前端开发能力，那本课程将帮你搞定前端，成为全栈开发工程师，大幅提升职业竞争力。</p>
                         </div>
                     </li>
                 </ul>
-                <!--<div id="main" style="width: 400px;height:250px;"></div>-->
-                <!--<div class="table">-->
-                    <!--<ul>-->
-                        <!--<li>-->
-                            <!--<span>区间</span>-->
-                            <!--<span><b></b></span>-->
-                            <!--<span>占比</span>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<span>4.5k-6k</span>-->
-                            <!--<span><b></b></span>-->
-                            <!--<span>2%</span>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<span>6k-8k</span>-->
-                            <!--<span><b></b></span>-->
-                            <!--<span>7.7%</span>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<span>8k-10k</span>-->
-                            <!--<span><b></b></span>-->
-                            <!--<span>12.2%</span>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<span>10k-15k</span>-->
-                            <!--<span><b></b></span>-->
-                            <!--<span>35.7%</span>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<span>15k-20k</span>-->
-                            <!--<span><b></b></span>-->
-                            <!--<span>25.1%</span>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<span>20k-30k</span>-->
-                            <!--<span><b></b></span>-->
-                            <!--<span></span>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<span>30k-50k</span>-->
-                            <!--<span><b></b></span>-->
-                            <!--<span></span>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                <!--</div>-->
             </div>
         </div>
     </div>
     <!--就业学员-->
-    <div class="section">
+    <div class="section careerBg">
         <div class="choose">
-            <img src="images/ufo_big.jpg" class="ufo" alt="">
-            <img src="images/ufo_small.jpg" class="ufo2" alt="">
             <div class="box">
-                <div class="boxName">
-                    <h2>为何那么多人选择前端？</h2>
+                <div class="boxName boxName4">
+                    <h2>学完前端，他们的薪水都翻倍了</h2>
                 </div>
                 <div class="chooseContent">
-                    <div class="boxLeft">
-                        <ul>
-                            <li>
-                                <h3 class="b1">针对就业</h3>
-                                <p>学职业技能，从根本上解决毕业 <br> 就等于失业的困顿</p>
-                            </li>
-                            <li>
-                                <h3 class="b2">针对转行</h3>
-                                <p>
-                                    实战老师带你上路，<br>
-                                    轻松无误区，职业道路更宽广
-                                </p>
-                            </li>
-                            <li>
-                                <h3 class="b3">针对加薪</h3>
-                                <p>
-                                    学了它，用实力说话 <br>
-                                    加薪不再遥遥无期
-                                </p>
-                            </li>
-                            <li>
-                                <h3 class="b4">针对提升</h3>
-                                <p>
-                                    更轻松更专业带你找到提升点 <br>
-                                    全面提升自我价值
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
+                    <!--就业学员-->
                 </div>
-                <!--<p class="box-b">-->
-                <!--不要问我，为什么现在后台开发转前端、设计师转前端、策划、编辑转前端、运营、市场在转前端、跨行业的都在转前端。 <br>-->
-                <!--如果现在你还在犹豫是否去学前端，你得问自己，真正想要的是什么样的工作，或者点击下方按钮。-->
-                <!--</p>-->
             </div>
         </div>
     </div>
     <!--课程体系-->
     <div class="section courseBg">
         <div class="box">
-            <div class="boxName">
-                <h2>课程体系</h2>
-                <!--<p class="course">专业、前沿、强大、实用</p>-->
+            <div class="boxName boxName5">
+                <h2 style="border-bottom: 3px solid #999;">课程体系</h2>
             </div>
             <p class="course">专业、前沿、强大、实用</p>
             <ul class="coursePhase">
-                <li>
+                <li class="course_li_1">
                     <div class="courseFront">
                         <h2 class="courseLevel">第一阶段</h2>
                         <p class="courseDesc">前端基础</p>
@@ -238,7 +159,7 @@
                         <p>扫一扫加老师微信</p>
                     </div>
                 </li>
-                <li>
+                <li class="course_li_2">
                     <div class="courseFront">
                         <h2 class="courseLevel">第二阶段</h2>
                         <p class="courseDesc">前端核心</p>
@@ -257,7 +178,7 @@
                         <p>扫一扫加老师微信</p>
                     </div>
                 </li>
-                <li>
+                <li class="course_li_3">
                     <div class="courseFront">
                         <h2 class="courseLevel">第三阶段</h2>
                         <p class="courseDesc">服务器端开发</p>
@@ -276,7 +197,7 @@
                         <p>扫一扫加老师微信</p>
                     </div>
                 </li>
-                <li>
+                <li class="course_li_4">
                     <div class="courseFront">
                         <h2 class="courseLevel">第四阶段</h2>
                         <p class="courseDesc">前端工程化</p>
@@ -295,13 +216,7 @@
                         <p>扫一扫加老师微信</p>
                     </div>
                 </li>
-                <!--全程实战项目贯穿始终-->
-                <!--第一阶段:HTML5基础 CSS3 移动端 页面布局 UI框架Bootstrap-->
-                <!--第二阶段:JavaScript、DOM、事件、BOM、Ajax、JQuery-->
-                <!--第三阶段:服务端开发php+mysql php框架thinkphp yii2.0 nodejs基础 npm express框架 使用wordpress建站-->
-                <!--第四阶段:前端工程化node、bower、gulp 、webpack,ES6语法,版本控制工具、git github-->
-                <!--第五阶段:流行MVVM框架：ReactJs 、VueJs 移动开发 ReactNative-->
-                <li>
+                <li class="course_li_5">
                     <div class="courseFront">
                         <h2 class="courseLevel">第五阶段</h2>
                         <p class="courseDesc">MVVM框架、移动开发</p>
@@ -326,8 +241,8 @@
     <!--实战项目-->
     <div class="section itemsBg">
         <div class="box">
-            <div class="boxName bg1">
-                <h2>实战项目接轨最热技术前沿</h2>
+            <div class="boxName boxName6" >
+                <h2 style="border-bottom: 3px solid #999;">实战项目接轨最热技术前沿</h2>
             </div>
             <!--手风琴-->
             <div id="accordion" class="accordion">
@@ -374,8 +289,8 @@
     <!--学员作品-->
     <div class="section bgWork">
         <div class="box">
-            <div class="boxName bg1">
-                <h2>学员作品</h2>
+            <div class="boxName boxName7">
+                <h2 style="border-bottom: 3px solid #999;">学员作品</h2>
             </div>
             <!--学员作品-->
             <div class="xzmmMask" id="xzmmMask">
@@ -404,7 +319,7 @@
     <!--联系我们-->
     <div class="section bgG">
         <div class="box">
-            <div class="boxName bg1">
+            <div class="boxName boxName8">
                 <h2>联系我们</h2>
             </div>
             <div class="contact">
@@ -528,7 +443,7 @@
             </div>
         </li>
         <li id="toTop">
-            <a href="#page1">
+            <a href="#home">
                 <span class="icon_s">&nbsp;</span>
                 <p>返回顶部</p>
             </a>
@@ -572,6 +487,8 @@
     $('#xzmmMask').click(function(){
        $(this).hide();
     });
+
+//    console.log($('.section').eq(0).clientWidth);
 </script>
 </body>
 </html>

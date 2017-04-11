@@ -2,8 +2,8 @@
     //������̨
     var stage = new Konva.Stage({
         container: 'container',
-        width: window.innerWidth,
-        height: window.innerHeight
+        width: 600,
+        height: 520
     });
 
     //��̨���ģ�Ҳ����ת������
@@ -13,8 +13,6 @@
         L2_Radius = 125,
         L1_Radius = 90,
         L0_Radius = 66;
-
-
     //������
     var bgLayer = new Konva.Layer({
         hitGraphEnabled : false//don��t need event on layer set
@@ -45,34 +43,28 @@
 
     //���Ʊ�����������
     var cneterCircleText = new CircleText({
-        text: "WEB前端",
+        text: "前端开发",
         innerRadius: L0_Radius,
         outerRadius: L1_Radius,
         fontSize: 17,
         fontFamily: '微软雅黑',
         fontFill: "#fff",
-        fontX: -41,
+        fontX: -36,
         fontY: -8,
         x: groupX,
         y: groupY,
-        innerFill: "#2A3466",
+        innerFill: "green",
         outerFill: "#ddd",
         opacity: .8
     });
     var centerGroup = cneterCircleText.createCircleText();
     bgLayer.add(centerGroup);
-
     stage.add(bgLayer);
-
-
-
     //������
     var layer = new Konva.Layer({
         // hitGraphEnabled : false
     });
     stage.add(layer);
-
-
     //��������Ķ�����
     var group = new Konva.Group({
         x: groupX,
@@ -82,13 +74,13 @@
 
     //Ҫ������5��3���Ķ�����������
     var L3CircleData = [{
-        text: "Webpack",//����webapp��Բ����� 1
+        text: "大数据可视化",//����webapp��Բ����� 1
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 14,
         fontFamily: '微软雅黑',
         fontFill: "#fff",
-        fontX: -30,
+        fontX: -42,
         fontY: -7,
         x: L3_Radius,
         y: 0,
@@ -98,13 +90,13 @@
         outerFill: "#ddd",
         opacity: .7
     },{
-        text: "ReactNative",//��̬������2��group
+        text: "微信小程序",//��̬������2��group
         innerRadius: 40,
         outerRadius: 50,
-        fontSize: 16	,
+        fontSize: 14	,
         fontFamily: '微软雅黑',
         fontFill: "purple",
-        fontX: -28,
+        fontX: -36,
         fontY: -7,
         x: 0,
         y: L3_Radius,
@@ -112,13 +104,13 @@
         outerFill: "#ddd",
         opacity: .7
     },{
-        text: "ReactJS",
+        text: "VR视图",
         innerRadius: 40,
         outerRadius: 50,
-        fontSize: 16	,
+        fontSize: 14	,
         fontFamily: '微软雅黑',
         fontFill: "purple",
-        fontX: -30	,
+        fontX: -23,
         fontY: -7,
         x: -L3_Radius,
         y: 0,
@@ -126,13 +118,13 @@
         outerFill: "#ddd",
         opacity: .7
     },{
-        text: "NodeJS",
+        text: "游戏开发",
         innerRadius: 40,
         outerRadius: 50,
-        fontSize: 16	,
+        fontSize: 14,
         fontFamily: '微软雅黑',
         fontFill: "purple",
-        fontX: -30	,
+        fontX: -28	,
         fontY: -7,
         x: (Math.cos(-115 * Math.PI / 180) * L3_Radius),
         y: (Math.sin(-115 * Math.PI / 180) * L3_Radius),
@@ -140,13 +132,13 @@
         outerFill: "#ddd",
         opacity: .7
     },{
-        text: "JQuery",
+        text: "Nodejs后端开发",
         innerRadius: 40,
         outerRadius: 50,
-        fontSize: 16	,
+        fontSize: 14,
         fontFamily: '微软雅黑',
         fontFill: "purple",
-        fontX: -30	,
+        fontX: -52,
         fontY: -7,
         x: (Math.cos(-45 * Math.PI / 180) * L3_Radius),
         y: (Math.sin(-45 * Math.PI / 180) * L3_Radius),
@@ -173,13 +165,13 @@
 
     // ���Ƶڶ����һ��Բ��
     var zeptoJSCircleText = new CircleText({
-        text: "Bootstrap",
+        text: "应用程序界面",
         innerRadius: 30,
         outerRadius: 40,
-        fontSize: 14	,
+        fontSize: 14,
         fontFamily: '微软雅黑',
         fontFill: "blue",
-        fontX: -26	,
+        fontX: -42,
         fontY: -7,
         x: (Math.cos(-75 * Math.PI / 180) * L2_Radius),
         y: (Math.sin(-75 * Math.PI / 180) * L2_Radius),
@@ -190,15 +182,14 @@
     var groupZepto = zeptoJSCircleText.createCircleText();
     groupL2.add(groupZepto);
 
-
     var CSS3CircleText = new CircleText({
-        text: "CSS3",
+        text: "酷炫网页开发",
         innerRadius: 30,
         outerRadius: 40,
         fontSize: 14	,
         fontFamily: '微软雅黑',
         fontFill: "blue",
-        fontX: -20	,
+        fontX: -42,
         fontY: -7,
         x: (Math.cos(105 * Math.PI / 180) * L2_Radius),
         y: (Math.sin(105 * Math.PI / 180) * L2_Radius),
@@ -211,18 +202,19 @@
 
     //ng
     var ngCircleText = new CircleText({
-        text: "JavaScript",
+        text: "跨平台移动APP",
         innerRadius: 30,
         outerRadius: 40,
         fontSize: 14,
         fontFamily: '微软雅黑',
         fontFill: "blue",
-        fontX: -20,
+        fontX: -50,
         fontY: -7,
         x: (Math.cos(15 * Math.PI / 180) * L2_Radius),
         y: (Math.sin(15 * Math.PI / 180) * L2_Radius),
         innerFill: "pink",
         outerFill: "#ddd",
+
         opacity: .7
     });
     var groupNg = ngCircleText.createCircleText();
@@ -235,7 +227,7 @@
         fontSize: 14	,
         fontFamily: '微软雅黑',
         fontFill: "blue",
-        fontX: -20,
+        fontX: -25,
         fontY: -7,
         x: (Math.cos(-175 * Math.PI / 180) * L2_Radius),
         y: (Math.sin(-175 * Math.PI / 180) * L2_Radius),
@@ -271,8 +263,6 @@
 
     }, layer);
     anim.start();
-
-
     // �����¼�����
     group.on('mouseover touchstart',function(e){
         angularSpeed = 10;
