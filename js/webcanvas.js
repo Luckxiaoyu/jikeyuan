@@ -54,7 +54,7 @@
         x: groupX,
         y: groupY,
         innerFill: "green",
-        outerFill: "#ddd",
+        outerFill: "#fff",
         opacity: .8
     });
     var centerGroup = cneterCircleText.createCircleText();
@@ -79,7 +79,7 @@
         outerRadius: 50,
         fontSize: 14,
         fontFamily: '微软雅黑',
-        fontFill: "#fff",
+        fontFill: "#000",
         fontX: -42,
         fontY: -7,
         x: L3_Radius,
@@ -87,7 +87,7 @@
         x: (Math.cos(20 * Math.PI / 180) * L3_Radius),
         y: (Math.sin(20 * Math.PI / 180) * L3_Radius),
         innerFill: "#CF2782",
-        outerFill: "#ddd",
+        outerFill: "#fff",
         opacity: .7
     },{
         text: "微信小程序",//��̬������2��group
@@ -95,13 +95,13 @@
         outerRadius: 50,
         fontSize: 14	,
         fontFamily: '微软雅黑',
-        fontFill: "purple",
+        fontFill: "#000",
         fontX: -36,
         fontY: -7,
         x: 0,
         y: L3_Radius,
-        innerFill: "#7CB9CE",
-        outerFill: "#ddd",
+        innerFill: "#2BA246",
+        outerFill: "#fff",
         opacity: .7
     },{
         text: "VR视图",
@@ -109,13 +109,13 @@
         outerRadius: 50,
         fontSize: 14	,
         fontFamily: '微软雅黑',
-        fontFill: "purple",
+        fontFill: "#000",
         fontX: -23,
         fontY: -7,
         x: -L3_Radius,
         y: 0,
-        innerFill: "#68AAFC",
-        outerFill: "#ddd",
+        innerFill: "#482F2B",
+        outerFill: "#fff",
         opacity: .7
     },{
         text: "游戏开发",
@@ -123,13 +123,13 @@
         outerRadius: 50,
         fontSize: 14,
         fontFamily: '微软雅黑',
-        fontFill: "purple",
+        fontFill: "#000",
         fontX: -28	,
         fontY: -7,
         x: (Math.cos(-115 * Math.PI / 180) * L3_Radius),
         y: (Math.sin(-115 * Math.PI / 180) * L3_Radius),
         innerFill: "yellow",
-        outerFill: "#ddd",
+        outerFill: "#fff",
         opacity: .7
     },{
         text: "Nodejs后端开发",
@@ -137,13 +137,13 @@
         outerRadius: 50,
         fontSize: 14,
         fontFamily: '微软雅黑',
-        fontFill: "purple",
+        fontFill: "#000",
         fontX: -52,
         fontY: -7,
         x: (Math.cos(-45 * Math.PI / 180) * L3_Radius),
         y: (Math.sin(-45 * Math.PI / 180) * L3_Radius),
         innerFill: "green",
-        outerFill: "#ddd",
+        outerFill: "#fff",
         opacity: .7
     }];
 
@@ -170,13 +170,13 @@
         outerRadius: 40,
         fontSize: 14,
         fontFamily: '微软雅黑',
-        fontFill: "blue",
+        fontFill: "#000",
         fontX: -42,
         fontY: -7,
         x: (Math.cos(-75 * Math.PI / 180) * L2_Radius),
         y: (Math.sin(-75 * Math.PI / 180) * L2_Radius),
         innerFill: "orange",
-        outerFill: "#ddd",
+        outerFill: "#fff",
         opacity: .7
     });
     var groupZepto = zeptoJSCircleText.createCircleText();
@@ -186,15 +186,15 @@
         text: "酷炫网页开发",
         innerRadius: 30,
         outerRadius: 40,
-        fontSize: 14	,
+        fontSize: 14,
         fontFamily: '微软雅黑',
-        fontFill: "blue",
+        fontFill: "#000",
         fontX: -42,
         fontY: -7,
         x: (Math.cos(105 * Math.PI / 180) * L2_Radius),
         y: (Math.sin(105 * Math.PI / 180) * L2_Radius),
-        innerFill: "pink",
-        outerFill: "#ddd",
+        innerFill: "red",
+        outerFill: "#fff",
         opacity: .7
     });
     var groupC3 = CSS3CircleText.createCircleText();
@@ -207,13 +207,13 @@
         outerRadius: 40,
         fontSize: 14,
         fontFamily: '微软雅黑',
-        fontFill: "blue",
+        fontFill: "#000",
         fontX: -50,
         fontY: -7,
         x: (Math.cos(15 * Math.PI / 180) * L2_Radius),
         y: (Math.sin(15 * Math.PI / 180) * L2_Radius),
-        innerFill: "pink",
-        outerFill: "#ddd",
+        innerFill: "#126ACB",
+        outerFill: "#fff",
 
         opacity: .7
     });
@@ -226,13 +226,13 @@
         outerRadius: 40,
         fontSize: 14	,
         fontFamily: '微软雅黑',
-        fontFill: "blue",
+        fontFill: "#000",
         fontX: -25,
         fontY: -7,
         x: (Math.cos(-175 * Math.PI / 180) * L2_Radius),
         y: (Math.sin(-175 * Math.PI / 180) * L2_Radius),
-        innerFill: "pink",
-        outerFill: "#ddd",
+        innerFill: "#FC82A5",
+        outerFill: "#fff",
         opacity: .7
     });
     var groupJq = jqCircleText.createCircleText();

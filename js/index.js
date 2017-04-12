@@ -24,14 +24,14 @@ $(document).ready(function() {
             if(index == 1){   //首页屏
                 //互联网
                 $('.con').find('.hd1').delay(500).css({
-                    left:'-2200px',
+                    left:'-3200px',
                     display:'block'
                 }).animate({
                     left: '0'
                 }, 1000, 'easeOutExpo');
                 //大趋势
                 $('.con').find('.hd2').delay(500).css({
-                    right:'-2200px',
+                    right:'-3200px',
                     display:'block'
                 }).animate({
                     right: '160px'
@@ -50,6 +50,8 @@ $(document).ready(function() {
                 }).animate({
                    top:'0'
                 }, 1000, 'easeOutExpo');
+                //canvas
+                $('.mcan').show().addClass('animated zoomIn');
             }
             if(index ==3){
                 $('.boxName3').find('h2').delay(100).css({
@@ -57,6 +59,8 @@ $(document).ready(function() {
                 }).animate({
                     top:'0'
                 }, 1000, 'easeOutExpo');
+
+                $(".suitable").show().addClass("animated rollIn");//flipInX
             }
             if(index ==4){
                 $('.boxName4').find('h2').delay(100).css({
@@ -64,6 +68,11 @@ $(document).ready(function() {
                 }).animate({
                     top:'0'
                 }, 1000, 'easeOutExpo');
+                //就业学员翻转
+                $('.careerStu_li_1').show().addClass('animated rotateIn');
+                $('.careerStu_li_2').show().addClass('animated rotateIn');
+                //
+                $('.course').delay(1000).addClass('animated shake');
             }
             if(index ==5){//课程
                 //公共title
@@ -74,31 +83,31 @@ $(document).ready(function() {
                 }, 1000, 'easeOutExpo');
                 //区块儿
                 $('.course_li_1').delay(100).css({
-                    top:'-800px',
+                    top:'1500px',
                     display:'block'
                 }).animate({
                     top:'0'
                 }, 1000, 'easeOutExpo');
                 $('.course_li_2').delay(300).css({
-                    top:'-800px',
+                    top:'1500px',
                     display:'block'
                 }).animate({
                     top:'0'
                 }, 1000, 'easeOutExpo');
                 $('.course_li_3').delay(500).css({
-                    top:'-800px',
+                    top:'1500px',
                     display:'block'
                 }).animate({
                     top:'0'
                 }, 1000, 'easeOutExpo');
                 $('.course_li_4').delay(700).css({
-                    top:'-800px',
+                    top:'1500px',
                     display:'block'
                 }).animate({
                     top:'0'
                 }, 1000, 'easeOutExpo');
                 $('.course_li_5').delay(900).css({
-                    top:'-800px',
+                    top:'1500px',
                     display:'block'
                 }).animate({
                     top:'0'
@@ -110,6 +119,8 @@ $(document).ready(function() {
                 }).animate({
                     top:'0'
                 }, 1000, 'easeOutExpo');
+                //手风琴
+                $('.accordion').show().addClass('animated flipInX');
             }
             if(index ==7){
                 $('.boxName7').find('h2').delay(100).css({
@@ -117,6 +128,8 @@ $(document).ready(function() {
                 }).animate({
                     top:'0'
                 }, 1000, 'easeOutExpo');
+                //选择木马
+                $('.automatic').show().addClass('animated fadeIn');
             }
             if(index ==8){
                 $('.boxName8').find('h2').delay(100).css({
@@ -124,9 +137,25 @@ $(document).ready(function() {
                 }).animate({
                     top:'0'
                 }, 1000, 'easeOutExpo');
+
+                $('.contact').show().addClass('animated slideInLeft');
+                $('.contactForm').show().addClass('animated slideInUp');
             }
         },
         onLeave: function(index, direction){
+            if(index == 2){
+                $('.mcan').hide();
+            }
+            if(index == 3){
+                $(".suitable").hide();
+            }
+            if(index == 4){
+                $('.careerStu_li_1').hide();
+                $('.careerStu_li_2').hide();
+            }
+            if(index == 6){
+                $('.accordion').hide();
+            }
             if(index == 5){
                 $('.course_li_1').delay(1500).css({
                     display:'none'
@@ -143,6 +172,13 @@ $(document).ready(function() {
                 $('.course_li_5').delay(1500).css({
                     display:'none'
                 });
+            }
+            if(index == 7){
+                $('.automatic').hide();
+            }
+            if(index == 8){
+                $('.contact').hide();
+                $('.contactForm').hide();
             }
         }
     });
