@@ -63,6 +63,9 @@
                     </div>
                 </div>
             </div>
+            <div class="chat_box">
+                <a href="#" target="_blank" class="a_btn">点击了解更多</a>
+            </div>
         </div>
     </div>
     <!--适合-->
@@ -120,6 +123,9 @@
                     </li>
                 </ul>
             </div>
+            <div class="chat_box">
+                <a href="#" target="_blank" class="a_btn">咨询我适合学前端吗？</a>
+            </div>
         </div>
     </div>
     <!--就业学员-->
@@ -142,6 +148,9 @@
                             <p class="stuInfo">刘同学，大专学历，现入职深圳市华**盛科技有限公司，任职前端开发工程师，月薪税后一万一</p>
                         </li>
                     </ul>
+                </div>
+                <div class="chat_box">
+                    <a href="#" target="_blank" class="a_btn">查看更多薪资</a>
                 </div>
             </div>
         </div>
@@ -250,6 +259,9 @@
                     </div>
                 </li>
             </ul>
+            <div class="chat_box">
+                <a href="#" target="_blank" class="a_btn">点击获取详细大纲</a>
+            </div>
         </div>
     </div>
     <!--实战项目-->
@@ -298,6 +310,9 @@
                     </li>
                 </ul>
             </div>
+            <div class="chat_box">
+                <a href="#" target="_blank" class="a_btn">查看项目演示地址</a>
+            </div>
         </div>
     </div>
     <!--学员作品-->
@@ -328,6 +343,9 @@
                 </div>
             </div>
             <!--/学院作品-->
+            <div class="chat_box">
+                <a href="#" target="_blank" class="a_btn">查看学员代码库</a>
+            </div>
         </div>
     </div>
     <!--联系我们-->
@@ -390,6 +408,9 @@
                     </ul>
                 </form>
             </div>
+            <div class="chat_box">
+                <a href="http://cn.mikecrm.com/t6sjQTq" target="_blank" class="a_btn">点击在线报名</a>
+            </div>
             <!--页脚-->
             <div class="foots">
                 <!--<h2>-->
@@ -437,7 +458,7 @@
             </div>
         </li>
         <li>
-            <a href="#" target="_blank">
+            <a href="http://cn.mikecrm.com/t6sjQTq" target="_blank">
                 <span class="icon_s">&nbsp;</span>
                 <p>在线报名</p>
             </a>
@@ -500,8 +521,12 @@ $('#xzmmMask img').attr('src',curUrl);
 $('#xzmmMask').click(function(){
 $(this).hide();
 });
-
-//    console.log($('.section').eq(0).clientWidth);
+//每一屏的咨询按钮
+    if($(document).height()>620){
+        $(".chat_box").show();
+    }else{
+        $(".chat_box").hide();
+    }
 </script>
 </body>
 </html>
