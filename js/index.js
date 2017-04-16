@@ -196,6 +196,9 @@ $(document).ready(function() {
                 });
                 $(".chat_box").hide();
             }
+            if(index == 6){
+                $(".chat_box").hide();
+            }
             if(index == 7){
                 $('.automatic').hide();
                 $(".chat_box").hide();
