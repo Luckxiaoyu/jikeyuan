@@ -52,7 +52,10 @@ $(document).ready(function() {
                 }, 1000, 'easeOutExpo');
                 //canvas
                 $('.mcan').show().addClass('animated zoomIn');
-                $(".chat_box").delay(1000).fadeIn();
+                if($(document).height()>800){
+                    console.log($(document).height());
+                    $(".chat_box").delay(1000).fadeIn();
+                }
             }
             if(index ==3){
                 $('.boxName3').find('h2').delay(100).css({
@@ -62,7 +65,9 @@ $(document).ready(function() {
                 }, 1000, 'easeOutExpo');
 
                 $(".suitable").show().addClass("animated swing");//swing jello
-                $(".chat_box").delay(1000).fadeIn();
+                if($(document).height()>800){
+                    $(".chat_box").delay(1000).fadeIn();
+                }
             }
             if(index ==4){
                 $('.boxName4').find('h2').delay(100).css({
@@ -75,7 +80,9 @@ $(document).ready(function() {
                 $('.careerStu_li_2').show().addClass('animated rotateIn');
                 //
                 $('.course').delay(1000).addClass('animated shake');
-                $(".chat_box").delay(1000).fadeIn();
+                if($(document).height()>800){
+                    $(".chat_box").delay(1000).fadeIn();
+                }
             }
             if(index ==5){//课程
                 //公共title
@@ -115,7 +122,9 @@ $(document).ready(function() {
                 }).animate({
                     top:'0'
                 }, 1000, 'easeOutExpo');
-                $(".chat_box").delay(1000).fadeIn();
+                if($(document).height()>800){
+                    $(".chat_box").delay(1000).fadeIn();
+                }
             }
             if(index ==6){
                 $('.boxName6').find('h2').delay(100).css({
@@ -125,7 +134,9 @@ $(document).ready(function() {
                 }, 1000, 'easeOutExpo');
                 //手风琴
                 // $('.accordion').show().addClass('animated flipInX');
-                $(".chat_box").delay(1000).fadeIn();
+                if($(document).height()>800){
+                    $(".chat_box").delay(1000).fadeIn();
+                }
             }
             if(index ==7){
                 $('.boxName7').find('h2').delay(100).css({
@@ -135,7 +146,9 @@ $(document).ready(function() {
                 }, 1000, 'easeOutExpo');
                 //选择木马
                 $('.automatic').show().addClass('animated fadeIn');
-                $(".chat_box").delay(1000).fadeIn();
+                if($(document).height()>800){
+                    $(".chat_box").delay(1000).fadeIn();
+                }
             }
             if(index ==8){
                 $('.boxName8').find('h2').delay(100).css({
@@ -146,7 +159,9 @@ $(document).ready(function() {
 
                 $('.contact').show().addClass('animated slideInLeft');
                 $('.contactForm').show().addClass('animated slideInUp');
-                $(".chat_box").delay(1000).fadeIn();
+                if($(document).height()>800){
+                    $(".chat_box").delay(1000).fadeIn();
+                }
             }
         },
         onLeave: function(index, direction){
