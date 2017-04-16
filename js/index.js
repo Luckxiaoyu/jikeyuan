@@ -60,7 +60,7 @@ $(document).ready(function() {
                     top:'0'
                 }, 1000, 'easeOutExpo');
 
-                $(".suitable").show().addClass("animated rollIn");//flipInX
+                $(".suitable").show().addClass("animated swing");//swing jello
             }
             if(index ==4){
                 $('.boxName4').find('h2').delay(100).css({
@@ -120,7 +120,7 @@ $(document).ready(function() {
                     top:'0'
                 }, 1000, 'easeOutExpo');
                 //手风琴
-                $('.accordion').show().addClass('animated flipInX');
+                // $('.accordion').show().addClass('animated flipInX');
             }
             if(index ==7){
                 $('.boxName7').find('h2').delay(100).css({
@@ -152,9 +152,6 @@ $(document).ready(function() {
             if(index == 4){
                 $('.careerStu_li_1').hide();
                 $('.careerStu_li_2').hide();
-            }
-            if(index == 6){
-                $('.accordion').hide();
             }
             if(index == 5){
                 $('.course_li_1').delay(1500).css({

@@ -114,7 +114,7 @@
         fontY: -7,
         x: -L3_Radius,
         y: 0,
-        innerFill: "#482F2B",
+        innerFill: "#089D9C",
         outerFill: "#fff",
         opacity: .7
     },{
