@@ -156,7 +156,6 @@ $(document).ready(function() {
                 }).animate({
                     top:'0'
                 }, 1000, 'easeOutExpo');
-
                 $('.contact').show().addClass('animated slideInLeft');
                 $('.contactForm').show().addClass('animated slideInUp');
                 if($(document).height()>800){
