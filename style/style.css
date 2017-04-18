@@ -705,7 +705,7 @@ nav ul li a{
     background: url(../images/goto.png) no-repeat center top;
 }
 
-.zx li:nth-child(2) a:hover{
+.zx li:nth-child(2) > a:hover{
     background-color: red;
     color:#fff;
 }
@@ -787,7 +787,23 @@ nav ul li a{
     height:25px;
     margin-right: 5px;
     vertical-align: middle;
+    margin-right: -1px;
+    margin-left: 2px;
 }
+.q_msg_text{
+    display:inline-block;
+    background-color:#1494E4;
+    font-size:12px;
+    width:110px;
+    height:20px;
+    color:#fff;
+    border-radius: 2px;
+    cursor:default;
+    box-shadow:1px 1px #19A4ED;
+    text-align: center;
+    line-height: 20px;
+}
+
 /*联系我们 表单*/
 .contact{
     display: none;
