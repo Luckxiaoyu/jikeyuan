@@ -23,26 +23,19 @@ $(document).ready(function() {
 
             if(index == 1){   //首页屏
                 //互联网
-                $('.con').find('.hd1').delay(500).css({
-                    left:'-3200px',
-                    display:'block'
-                }).animate({
-                    left: '0'
-                }, 1000, 'easeOutExpo');
-                //大趋势
-                $('.con').find('.hd2').delay(500).css({
-                    right:'-3200px',
-                    display:'block'
-                }).animate({
-                    right: '160px'
-                }, 1000, 'easeOutExpo');
-                //火箭
-                $('.ban').find('.banImg').delay(500).css({
-                    top:'2200px',
-                    display:'block'
-                }).animate({
-                    top: '0'
-                }, 1000, 'easeOutExpo');
+                //$('.con').find('.hd1').delay(500).css({
+                //    left:'-3200px',
+                //    display:'block'
+                //}).animate({
+                //    left: '0'
+                //}, 1000, 'easeOutExpo');
+                ////大趋势
+                //$('.con').find('.hd2').delay(500).css({
+                //    right:'-3200px',
+                //    display:'block'
+                //}).animate({
+                //    right: '160px'
+                //}, 1000, 'easeOutExpo');
             }
             if(index == 2){
                 $('.boxName2').find('h2').delay(200).css({

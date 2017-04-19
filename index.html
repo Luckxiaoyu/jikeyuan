@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="长治IT培训 前端开发培训 软件开发培训 网站开发培训 APP开发培训 游戏开发培训"/>
+    <meta name="keywords" content="长治IT培训,前端开发培训,软件开发培训,网站开发培训,APP开发培训,游戏开发培训,网站开发,APP开发,软件开发，前端开发"/>
     <meta name="description" content="极客园IT学习中心是长治地区唯一一家专业的前端开发培训机构，就业学员平均月薪8000以上,"/>
     <title>极客园IT学习中心--长治地区唯一一家专业前端开发培训机构</title>
     <link rel="stylesheet" href="style/reset.css">
@@ -33,21 +33,19 @@
     </div>
 </div>
 <div id="fullpage">
-    <div class="section active">
-        <div class="slide active">
-            <div class="banner">
+    <div class="section active homePage">
                 <div class="ban">
-                    <img src="images/ban_bg.png" width="100%" class="banImg" alt="">
+                    <canvas id="canvas" class="swirl"></canvas>
                     <div class="move">
                         <div class="con">
                             <img src="images/hd1.png" class="hd1" alt="">
                             <img src="images/hd2.png" class="hd2" alt="">
-                            <img src="images/hd_down.png" class="hd3" alt="">
+                            <h1 class="infoMain">高级前端开发工程师精品小班</h1>
+                            <a href="#" class="intro">开启试听</a>
                         </div>
                     </div>
+
                 </div>
-            </div>
-        </div>
     </div>
     <!--简介-->
     <div class="section overviewBg">
@@ -494,6 +492,7 @@
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/konva.min.js"></script>
 <script src="js/webcanvas.js"></script>
+<script src="js/swirl.js"></script>
 <script src="js/animate.js"></script>
 <script src="js/index.js"></script>
 <script src="js/xzmm.js"></script>
@@ -525,6 +524,11 @@ $('#xzmmMask').click(function(){
 $(this).hide();
 });
 
+
+//$('.infoMain').delay(500).css({
+//    display:'block'
+//}).fadeIn();
+//$('.intro').delay(500).show().fadeIn();
 </script>
 </body>
 </html>
