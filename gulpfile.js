@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     clean = require('gulp-clean'),
     notify = require('gulp-notify'),
+    connect = require('gulp-connect'),
     htmlmin = require('gulp-htmlmin'),  //压缩html
     livereload = require('gulp-livereload');
 //自定义任务 
@@ -56,8 +57,28 @@ gulp.task('mHtml', function () {
         .pipe(gulp.dest('dist'));
 });
 
+//本地server
+gulp.task('server',function(){
+    connect.server({
+        root: './',
+        livereload: true
+    });
+});
+
+gulp.task('html', function () {
+    gulp.src('./*.html')
+        .pipe(connect.reload());
+});
+//监听html
+gulp.task('watch', function () {
+    gulp.watch(['./*.html'], ['html']);
+});
 //为项目添加默认执行的任务
-gulp.task('build',['styles','scripts','images','mHtml']);
-gulp.task('default',['build']);
+//部署、打包任务
+// gulp.task('build',['styles','scripts','images','mHtml']);
+//gulp.task('build',['styles','scripts','mHtml']);
+//gulp.task('default',['build']);
+//开发任务
+gulp.task('default', ['server', 'watch']);
 
 

@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="style/jquery.fullpage.css">
     <link rel="stylesheet" href="style/animate.min.css"/>
     <link rel="shortcut icon" href="images/favicon.ico"/>
+    <script>
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            window.location = "m.html";
+        }
+    </script>
     <script src="http://api.map.baidu.com/api?v=1.3"></script>
 </head>
 <body>
@@ -33,19 +38,19 @@
     </div>
 </div>
 <div id="fullpage">
+    <!--首页-->
     <div class="section active homePage">
-                <div class="ban">
-                    <canvas id="canvas" class="swirl"></canvas>
-                    <div class="move">
-                        <div class="con">
-                            <img src="images/hd1.png" class="hd1" alt="">
-                            <img src="images/hd2.png" class="hd2" alt="">
-                            <h1 class="infoMain">高级前端开发工程师精品小班</h1>
-                            <a href="#" class="intro">开启试听</a>
-                        </div>
-                    </div>
-
+        <div class="ban">
+            <canvas id="canvas" class="swirl"></canvas>
+            <div class="move">
+                <div class="con">
+                    <img src="images/hd1.png" class="hd1" alt="">
+                    <img src="images/hd2.png" class="hd2" alt="">
+                    <h1 class="infoMain">高级前端开发工程师精品小班</h1>
+                    <a href="#" class="intro">开启试听</a>
                 </div>
+            </div>
+        </div>
     </div>
     <!--简介-->
     <div class="section overviewBg">
@@ -128,6 +133,7 @@
     </div>
     <!--就业学员-->
     <div class="section careerBg">
+        <!--<canvas id="bubble" width="" height=""></canvas>-->
         <div class="choose">
             <div class="box">
                 <div class="boxName boxName4">
@@ -411,11 +417,9 @@
             </div>
             <!--页脚-->
             <div class="foots">
-                <!--<h2>-->
-                    <!--&lt;!&ndash;<img src="/images/logo-bai.png" alt="极客园IT学习中心" width="145">&ndash;&gt;-->
-                    <!--极客园IT学习中心-->
-                <!--</h2>-->
-                <p>&copy;版权所有 2016 - 2017 长治市风驰远洋科技有限公司&nbsp;&nbsp;&nbsp;晋ICP备16011270号&nbsp;&nbsp;&nbsp;<br/>邮箱:<a href="mailTo:guimei201314@gmail.com">guimei201314@gmail.com</a><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_4617777'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/stat.php%3Fid%3D4617777%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_4617777"><a href="http://www.cnzz.com/stat/website.php?web_id=4617777" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic1.gif"></a></span><script src=" http://s22.cnzz.com/stat.php?id=4617777&amp;show=pic1" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=4617777&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript"></script><br>&nbsp;&nbsp;&nbsp;</p>
+                <p>&copy;版权所有 2016 - 2017 长治市风驰远洋科技有限公司&nbsp;&nbsp;&nbsp;晋ICP备16011270号&nbsp;&nbsp;&nbsp;<br/>邮箱:<a href="mailTo:guimei201314@gmail.com">guimei201314@gmail.com</a>
+                    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261759854'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261759854%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+                &nbsp;&nbsp;&nbsp;</p>
             </div>
         </div>
     </div>
@@ -496,6 +500,7 @@
 <script src="js/animate.js"></script>
 <script src="js/index.js"></script>
 <script src="js/xzmm.js"></script>
+<!--<script src="js/bubble.js"></script>-->
 <script>
 /*侧栏悬浮*/
 $('.qq_li').hover(function(){
@@ -523,12 +528,6 @@ $('#xzmmMask img').attr('src',curUrl);
 $('#xzmmMask').click(function(){
 $(this).hide();
 });
-
-
-//$('.infoMain').delay(500).css({
-//    display:'block'
-//}).fadeIn();
-//$('.intro').delay(500).show().fadeIn();
 </script>
 </body>
 </html>

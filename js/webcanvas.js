@@ -1,19 +1,16 @@
 (function(){
-    //������̨
+
     var stage = new Konva.Stage({
         container: 'container',
         width: 600,
         height: 520
     });
-
-    //��̨���ģ�Ҳ����ת������
     var groupX = stage.width() / 2,
         groupY = stage.height() / 2,
         L3_Radius = 217,
         L2_Radius = 125,
         L1_Radius = 90,
         L0_Radius = 66;
-    //������
     var bgLayer = new Konva.Layer({
         hitGraphEnabled : false//don��t need event on layer set
     });
@@ -90,7 +87,7 @@
         outerFill: "#fff",
         opacity: .7
     },{
-        text: "微信小程序",//��̬������2��group
+        text: "微信小程序",
         innerRadius: 40,
         outerRadius: 50,
         fontSize: 14	,
@@ -156,14 +153,12 @@
     layer.add(group);
 
 
-    //���Ƶڶ��㶯����
     var groupL2 = new Konva.Group({
         x: groupX,
         y: groupY,
         rotation: 0
     });
 
-    // ���Ƶڶ����һ��Բ��
     var zeptoJSCircleText = new CircleText({
         text: "应用程序界面",
         innerRadius: 30,
@@ -242,28 +237,22 @@
 
     layer.batchDraw();
 
-    //���������
-    var angularSpeed = 60;//ÿ����ת�ĽǶ�
+    var angularSpeed = 60;
     var anim = new Konva.Animation(function(frame) {
-        //����ÿһ֡��ת�ĽǶ�
         var angleDiff = frame.timeDiff * angularSpeed / 1000;
-        //����������ת
         group.rotate(angleDiff);
         //
         group.getChildren().each(function(value, index){
             value.rotate(-angleDiff)
         });
 
-        //2�� ��ת
         groupL2.rotate(-angleDiff);
-        //2���ڵ� ��Ͻ��з�����ת
         groupL2.getChildren().each(function(value, index){
             value.rotate(angleDiff)
         });
 
     }, layer);
     anim.start();
-    // �����¼�����
     group.on('mouseover touchstart',function(e){
         angularSpeed = 10;
     });
@@ -273,14 +262,7 @@
     });
 })();
 
-//��תͼ�����϶���
 function CircleText(option) {
-    // ��������
-    // Բ�İ뾶
-    // Ĭ������λ��
-    // ��ɫԲ
-    // ��ɫ�⻷
-    // ͸����
     option = option || {};
     option.text = option.text || "canvas";
     option.innerRadius = option.innerRadius || 40;
